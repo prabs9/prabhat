@@ -10,49 +10,45 @@
 html,
 body {
     line-height: 1.4;
+    margin: 0;
     font-weight: 300;
     font-family: "Poppins";
 }
 
 .logo{
-    display: flex;
-    align-items: center;
-    border: none;
-    background-color: white;
+    display: block;
+    max-width: 80px;
+    height: auto;
 }
 
 .top {
     display: flex;
-    display: inline-flex;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eaeaea;
 }
+
 .babysearch {
     display: flex;
-    width: 400px;
-    padding: 15px 50px 15px 20px;
     align-items: center;
-    gap: 20px;
-    border-radius: 40px;
-    opacity: 0.5;
-    background: #C9F3F2; 
+    gap: 10px;
+    flex: 1;
+    max-width: 600px;
+    margin-left: 20px;
 }
 
 .file {
-    height: 60px;
-    width: 160px;
     display: flex;
+    align-items: center;
     gap: 10px;
-    border-radius: 30px;
-    background-color: #C9F3F2;
-    outline: none;
-    padding: 10px;
-    border: 2px solid #026B81;
-    background: #FFF;
+    margin-left: 20px;
 }
 
 .file img {
-    width: 30px;
+    width: 24px;
+    height: 24px;
 }
 .right-main{
     margin-left: 70px;
@@ -68,28 +64,38 @@ body {
     border: 0;
     outline: none;
     border-color: #C9F3F2;
-    color: #0c0c0c;
+    color: #000000;
 }
 
 input[type="text"]::placeholder {
-    color: black;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
 
 }
 .search input[type="file"] {
     width: 100px;
     padding: 10px;
+    text-decoration: underline;
 }
 
 .right {
-    padding: 70px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    align-items: center;
     gap: 20px;
 }
 
 .right img {
-    width: 36px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
 }
 
 .cart {
@@ -183,20 +189,38 @@ input[type="text"]::placeholder {
 }
 
 .trending {
-    display: flex;
-    width: 462px;
-    height: 520px;
-    padding-bottom: 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 27px;
-    padding: 30px;
-    overflow-y: scroll;
+    padding: 20px;
+    background-color: #f8f9fa; 
+    text-align: center;
 }
 
 .trending p {
-    font-size: medium;
-    font-weight: bolder;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin: 10px 0;
+    border-bottom: 1px solid #eaeaea; 
+    padding-bottom: 10px;
+}
+
+.product img {
+    width: 80px; 
+    height: 80px;
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
+.product p {
+    margin: 0;
+    font-size: 14px; 
+    color: #555; 
+    text-align: left; 
 }
 
 .top1 {
